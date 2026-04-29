@@ -1,9 +1,134 @@
-index.html
-<img src="IMG_3083.jpeg">
-<img src="IMG_3084.jpeg">
-<img src="IMG_3085.jpeg">
-<img src="IMG_3086.jpeg">
-<img src="IMG_3087.jpeg">
-<img src="IMG_3088.jpeg">
-<img src="IMG_3089.jpeg">
-<img src="IMG_3090.jpeg">
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ellfone Premium Store</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#0b0b0b;
+  color:#fff;
+}
+
+/* HERO */
+.hero {
+  position:relative;
+  height:90vh;
+  background:url('front.jpg') center/cover no-repeat;
+}
+
+.hero::after {
+  content:'';
+  position:absolute;
+  top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:50px;
+}
+
+.hero p {
+  color:#c89b5b;
+}
+
+/* BUTTONS */
+.btn {
+  display:inline-block;
+  margin:10px;
+  padding:12px 20px;
+  background:#c89b5b;
+  color:#000;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.btn:hover {
+  transform:translateY(-5px);
+}
+
+/* CAROUSEL */
+.carousel {
+  overflow:hidden;
+  padding:40px 0;
+}
+
+.carousel-track {
+  display:flex;
+  animation:scroll 25s linear infinite;
+}
+
+.carousel img {
+  width:400px;
+  margin:0 15px;
+  border-radius:10px;
+}
+
+@keyframes scroll {
+  0% {transform:translateX(0);}
+  100% {transform:translateX(-50%);}
+}
+
+/* CONTACT */
+.contact {
+  text-align:center;
+  padding:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>ELLFONE</h1>
+    <p>Seit 2003 – Ihr Partner für sichere Verbindung</p>
+
+```
+<a href="tel:07961568696" class="btn">Anrufen</a>
+<a href="https://wa.me/491743017554" class="btn">WhatsApp</a>
+<a href="mailto:info.ellwangen@vodafone.de" class="btn">E-Mail</a>
+```
+
+  </div>
+</section>
+
+<section class="carousel">
+  <div class="carousel-track">
+    <img src="IMG_3083.jpeg">
+    <img src="IMG_3084.jpeg">
+    <img src="IMG_3085.jpeg">
+    <img src="IMG_3086.jpeg">
+    <img src="IMG_3087.jpeg">
+    <img src="IMG_3088.jpeg">
+    <img src="IMG_3089.jpeg">
+    <img src="IMG_3090.jpeg">
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Kontakt</h2>
+  <p>Marienstr. 4, 73479 Ellwangen</p>
+  <p>Mo–Fr: 10–13 & 14–18 Uhr</p>
+
+  <p>📞 07961 568696</p>
+  <p>📠 07961 568876</p>
+  <p>✉️ info.ellwangen@vodafone.de</p>
+</section>
+
+</body>
+</html>
